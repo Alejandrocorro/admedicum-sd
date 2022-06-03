@@ -1,0 +1,66 @@
+//lorem
+.open-lorem{
+    height: 64px;
+    z-index: 2;
+    transition: .8s;
+    overflow: hidden;
+    position: relative;
+    .arrow-css::before {
+        content: "";
+        width: 6px;
+        height: 30px;
+        background: $dark;
+        position: absolute;
+        right: 80px;
+        top: 18px;
+        transform: rotate(130deg);
+        pointer-events: none;
+    }
+    .arrow-css::after {
+        content: "";
+        width: 6px;
+        height: 30px;
+        background: $dark;
+        position: absolute;
+        right: 100px;
+        top: 18px;
+        transform: rotate(-130deg);
+        pointer-events: none;
+    }
+    .info-css{
+        opacity: 1;
+        position: absolute;
+    }
+    .has-text-color{
+        transition: .4s;
+        color: $dark;
+    }
+    .border-card {
+        transition: .4s;
+        border: 5px solid #2F4F9D;
+        background: #259EC81A;
+    }
+    /**.border-card {
+        &:nth-child(1){
+            border-bottom: unset !important;
+        }
+    }**/
+    &.active-lorem{
+        height: 510px !important;
+        .arrow-css::after {
+            background: $primary;
+            transform: rotate(-50deg) !important;
+        }
+        .arrow-css::before {
+            background: $primary;
+            transform: rotate(50deg) !important;
+        }
+        .has-text-color{
+            color: $primary !important;
+        }
+        .border-card{
+            border: 5px solid #319966 !important;
+            background: #F1F8EA !important;
+        }
+    }
+}

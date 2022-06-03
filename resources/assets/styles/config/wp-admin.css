@@ -1,0 +1,31 @@
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column label {
+    margin-bottom: 10px;
+}
+
+.column input {
+    margin-bottom: 20px;
+}
+
+.form-table {
+    width: 40%;
+}
+
+.input-gruop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.input-gruop input{
+    margin: 0 !important;
+}
+
+.is-hidden {
+    display: none;
+}
+

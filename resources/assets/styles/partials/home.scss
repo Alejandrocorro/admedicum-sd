@@ -1,0 +1,86 @@
+
+//Botones para mostrat el texto
+.caja-ocultar-c{
+    height: 20px;
+    overflow: hidden;
+    transition: .7s;
+    &.home{
+        height: 52px;
+    }
+    &.active-clinical{
+        height: auto !important;
+    }
+}
+#ocultar-c.active-clinical{
+    opacity: 0 !important;
+    height: 0 !important;
+}
+//testimonial
+.testimonials .splide__slide .carrusel{
+    overflow: hidden;
+    width: 536px;
+    min-height: 450px;
+    height: 100%;
+    max-height: 500px;
+    transition: .7s;
+    &.is-active{
+        max-height: 100% !important;
+    }
+}
+// svg del flecha 
+.arrow-down{
+    &.center{
+        @extend .is-full-width, .is-flex, .justify-center;
+        position: absolute;
+        bottom: 55px;
+    }
+    &.center-normal{
+        @extend .is-full-width, .is-flex, .justify-center, .has-padding-bottom-25;
+    }
+    &.center-25{
+        svg{
+            width: 25px !important;
+            height: 12.5px !important;
+        }
+    }
+    &.about{
+        svg{
+            width: 45px !important;
+            height: 45px !important;
+            fill: white;
+        }
+    }
+    .svg{
+        width: 45px;
+        height: 22px;
+    }
+}
+
+//logos footer
+.button.logos-footer{
+    @extend .has-margin-left-10, .has-margin-right-10, .is-borderless, .is-paddingless;
+    svg{
+       fill: $primary;
+    }
+}
+.sd{
+    @extend .is-relative;
+    &::after{
+        position: absolute;
+        content: "";
+        background: red;
+        width: 5px;
+        left: 9%;
+        height: 41%;
+        top: 51px;
+    }
+    &::before{
+        position: absolute;
+        content: "";
+        background: red;
+        width: 5px;
+        right: 9%;
+        height: 41%;
+        bottom: 51px;
+    }
+}

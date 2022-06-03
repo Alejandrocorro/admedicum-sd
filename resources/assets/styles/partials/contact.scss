@@ -1,0 +1,30 @@
+.contact{
+    label{
+        @extend .tk-canada-type-gibson, .font-is-20, .has-text-grey;
+        font-weight: 200;
+    }
+    input{
+        @extend .tk-canada-type-gibson, .has-margin-top-5, .has-padding-15;
+        border: 2.5px solid $light !important;
+        background: transparent !important;
+        border-radius: unset !important;
+        height: 40px;
+    }
+    textarea{
+        @extend .tk-canada-type-gibson, .has-height-150, .has-margin-top-5, .has-padding-15;
+        border: 2.5px solid $light !important;
+        background: transparent !important;
+        border-radius: unset !important;
+    }
+    &.is-2{
+        label{
+            @extend .tk-canada-type-gibson, .font-is-20, .has-text-white;
+        }    
+        input{
+            border: 2.5px solid white !important;
+        }
+        textarea{
+            border: 2.5px solid white !important;
+        }
+    }
+}

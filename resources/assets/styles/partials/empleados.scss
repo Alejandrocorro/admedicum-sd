@@ -1,0 +1,6 @@
+//Empleados
+.single-empleados .content{
+    img{
+        @extend .border-img, .blog-case;
+    }
+}

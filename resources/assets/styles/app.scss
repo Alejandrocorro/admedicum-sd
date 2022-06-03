@@ -1,0 +1,25 @@
+/** Config */
+@import url('https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css');
+@import 'config/variables';
+@import 'config/external';
+@import 'config/helpers';
+@import 'woocommerce/index';
+/** Common */
+@import 'common/global';
+@import 'common/my-styles';
+/** Components */
+@import 'components/button';
+
+/** Partials */
+@import 'partials/header';
+@import 'partials/reponsive';
+@import 'partials/empleados';
+@import 'partials/about';
+@import 'partials/blog';
+@import 'partials/case-studies';
+@import 'partials/home';
+@import 'partials/patient-engagement';
+@import 'partials/single';
+@import 'partials/contact';
+
+

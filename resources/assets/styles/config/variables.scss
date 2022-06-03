@@ -1,0 +1,98 @@
+/**
+ * Variables
+ */
+
+$primary: #319966;
+$dark: #2F4F9D;
+$light: #259EC8;
+$green: #76B830;
+$grey: #707070;
+$info: #616160;
+
+$theme-colors: (
+  primary: $primary,
+  dark: $dark,
+  light: $light,
+  grey: $grey,
+  info: $info,
+  green: $green
+);
+
+
+$body-family: 'GOTHICB';
+$body-size: 16px;
+$fon-family: 'GOTHIC';
+
+
+[data-aos] {
+  transition-timing-function: ease-out !important;
+  
+  &:not([data-aos-duration]) {
+      transition-duration: 1s !important;
+  }
+}
+h1, h2, h3, h4, h5{
+  @extend .font-GOTHICB-normal;
+  font-weight: bold;
+  font-style: normal;
+}
+span, div, p {
+  @extend .tk-canada-type-gibson;
+}
+a, button {
+  @extend .tk-canada-type-gibson;
+}
+.font-GOTHICB-normal {
+  font-family: 'GOTHICB';
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: GOTHICB;
+  src: url('/app/themes/web-2/dist/fonts/GOTHICB.TTF');
+}
+.font-GOTHIC-normal{
+  font-family: 'GOTHIC';
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: GOTHIC;
+  src: url('/app/themes/web-2/dist/fonts/GOTHIC.TTF');
+}
+.tk-canada-type-gibson {
+  font-family: "canada-type-gibson",sans-serif; 
+}
+.font-is-60{
+  font-size: 60px;
+  line-height: 65px;
+}
+.font-is-40{
+  font-size: 40px;
+  line-height: 45px;
+}
+.font-is-30{
+  font-size: 30px;
+  line-height: 35px;
+  &.is-line-30{
+    line-height: 30px;
+  }
+  &.is-line-45{
+    line-height: 45px;
+  }
+}
+.font-is-25{
+  font-size: 20px;
+  line-height: 25px;
+}
+.font-is-20{
+  font-size: 20px;
+  line-height: 24px;
+}
+.font-is-15{
+  font-size: 15px;
+  line-height: 18px;
+}
+strong{
+  @extend .has-text-primary;
+}
